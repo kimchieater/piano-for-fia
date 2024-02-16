@@ -122,7 +122,12 @@ select{
 
 @media screen and (max-width: 1100px){
 
-
+  body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
   .piano-bg{
   height:100vh;
   display:flex;
