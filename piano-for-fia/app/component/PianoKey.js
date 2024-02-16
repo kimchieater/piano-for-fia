@@ -1,4 +1,4 @@
-import { playNote } from '../../util/audio'; 
+import { playNote, audoC} from '../../util/audio'; 
 import {useState, useEffect} from 'react';
 
 
@@ -14,6 +14,11 @@ export default function PianoKey({note, isBlack, volume, octave}){
 
   const handleTouchStart = (e) => {
         e.preventDefault(); 
+        if (audioCtx && audioCtx.state === 'suspended') {
+        audioCtx.resume().then(() => {
+            console.log("AudioContext resumed!");
+        }).catch(err => console.error("Error resuming AudioContext:", err));
+    }
         playNote(note, volume, octave).catch(err => console.error("Error playing note:", err));
     };
 

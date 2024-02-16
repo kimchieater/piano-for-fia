@@ -46,4 +46,4 @@ async function playNote(note, volume = 1, octave = 4) {
     source.start(0);
 }
 
-export { playNote };
+export { playNote, audioCtx };
