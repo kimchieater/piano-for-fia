@@ -61,9 +61,16 @@
   background:var(--main-color);
   padding:30px;
   border-radius: var(--border-radius);
-  border-bottom: 1px solid var(--sub-color-dark);
+  box-shadow: 7px 7px 8px var(--sub-color-dark);
   margin-bottom:10px;
   
+  
+}
+
+.piano-adjust h3{
+  color:#4a6656;
+  font-weight:900;
+  font-size:20px;
 }
 
 .label-volume{
@@ -95,6 +102,7 @@ select{
   display:flex;
   justify-content: center;
   background:var(--main-color);
+  box-shadow: 7px 7px 10px var(--sub-color-dark);
 }
 
 .piano-key {

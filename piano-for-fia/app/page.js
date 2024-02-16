@@ -52,6 +52,7 @@ export default function Home() {
                     <h3>Volume</h3>
                     <input type="range" className="volume" min="0" max="100" value={volume} onChange={(e) => setVolume(e.target.value)}></input>
                   </label>
+                    <h3>Fia Clare Proffitt</h3>
                     <lable className="label-volume">
                     <h3>Octaves</h3>
                     <select className="octave" value={octave} onChange={handleOctaveChange}>
