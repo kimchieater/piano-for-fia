@@ -1,4 +1,4 @@
-import { playNote, audoC} from '../../util/audio'; 
+import { playNote, audioCtx} from '../../util/audio'; 
 import {useState, useEffect} from 'react';
 
 
