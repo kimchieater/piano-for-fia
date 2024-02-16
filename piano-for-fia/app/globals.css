@@ -117,6 +117,7 @@ select{
   z-index:2;
   box-shadow: 5px 5px 5px var(--sub-color-dark);
   cursor:pointer;
+    color:var(--color-piano-note);
 }
 
 @media screen and (max-width: 1100px){
