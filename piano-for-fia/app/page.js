@@ -24,7 +24,7 @@ export default function Home() {
 
   useEffect(()=>{
     const handleKeyPress = (event) =>{
-      const key = event.key.toLowerCase();
+      const key = event.key;
       const noteBase = KeyMapping[key];
       playNote(noteBase, webAudioVolume, octave);
     };
